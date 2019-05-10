@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?tk8uyt') format('truetype'),
-    url('fonts/icomoon.woff?tk8uyt') format('woff'),
-    url('fonts/icomoon.svg?tk8uyt#icomoon') format('svg');
+    url('fonts/icomoon.ttf?meijqv') format('truetype'),
+    url('fonts/icomoon.woff?meijqv') format('woff'),
+    url('fonts/icomoon.svg?meijqv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -32,6 +32,21 @@
 .i-mail:before {
   content: "\e907";
 }
+.i-cross:before {
+  content: "\e908";
+}
+.i-cancel:before {
+  content: "\e908";
+}
+.i-close:before {
+  content: "\e908";
+}
+.i-quit:before {
+  content: "\e908";
+}
+.i-remove:before {
+  content: "\e908";
+}
 .i-menu:before {
   content: "\e904";
 }
@@ -45,7 +60,6 @@
 }
 .i-viber:before {
   content: "\e90c";
-  color: #665cac;
 }
 .i-youtube:before {
   content: "\e90d";
