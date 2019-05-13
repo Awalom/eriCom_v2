@@ -71,7 +71,6 @@ h1, h2, h3 {
   font-weight: 300;
   line-height: 1.5em;
   margin-bottom: 1em;
-  text-transform: uppercase;
 }
 
 h1 {
@@ -233,22 +232,23 @@ img {
 ----------------------------------------------*/
 
 .hr-1 {
-  overflow: visible;
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
+  position: relative;
+}
+.hr-1 span {
+  background-color: #fff;
+ 
 }
 
-.hr-1:after {
-  content: "Main News";
-  display: inline-block;
-  position: relative;
-  top: -0.4em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: #d3D8Da;
+.hr-1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 18px;
+  height: 1px;
+  background-color: black;
+  z-index: -10;
+  
 }
 
 /* PADDINGS
@@ -324,7 +324,7 @@ img {
 /* containers
 ----------------------------------------------*/
 
-#container {
+#container-main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1em;
@@ -362,7 +362,6 @@ img {
 }
 
 #news {
-  background-color: #d3d8da;
   grid-column: 2/5;
   grid-row: 4/5;
 }
@@ -376,7 +375,6 @@ img {
 #membership {
   grid-column: 1/3;
   grid-row: 6/7;
-  background-color: blueviolet;
 }
 
 #about-us {
@@ -663,12 +661,37 @@ img {
 /*=========Membership page
 =======================================*/
 
-.W-100P {
+.swiper-container {
+  background-color: lightblue;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
 }
 
-#membership label {
-  display: none;
+.swiper-slide {
+  width: 300px;
+  height: 380px;
+  background-color: #fff;
+}
+
+.swiper-slide .imagebox {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.swiper-slide .imagebox img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide .details h3 {
+  text-align: center;
+}
+
+.swiper-slide .details span {
+  color: #e74c3c;
 }
 
 /* MEDIA QUESRY
@@ -691,7 +714,7 @@ img {
   #header #social {
     display: none;
   }
-  #container {
+  #container-main {
     grid-template-columns: 1fr;
   }
   #header {
