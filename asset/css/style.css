@@ -1,10 +1,8 @@
 /*	Google font Roboto
 --------------------------------------------------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400,400i,500,500i,700,900");
 /*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
 --------------------------------------------------------------------------------------- */
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -19,7 +17,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  line-height: 1.1em;
+  line-height: 1.4;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
 }
 
 ol, ul {
@@ -54,6 +54,8 @@ html {
 
 /*font proporty of the site*/
 
+
+
 button, input, select, textarea {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -80,7 +82,8 @@ h1 {
 
 h2 {
   font-size: 1.3em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.01em;
+  word-spacing: 0.1em;
 }
 
 h3 {
@@ -336,7 +339,8 @@ img {
   height: 50px;
   width: 100%;
   background-color: #fff;
-  box-shadow: 10px 10px 10px;
+  *box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: solid 1px #eee;
   padding-right: 2em;
   z-index: 1000;
   position: sticky;
@@ -352,7 +356,6 @@ img {
 #aside {
   grid-column: 1/2;
   grid-row: 3/5;
-  width: 200px;
   background: cadetblue;
 }
 
@@ -367,26 +370,23 @@ img {
 }
 
 #events {
-  background-color: #d3d8da;
   grid-column: 1/5;
   grid-row: 5/6;
 }
 
 #membership {
-  grid-column: 1/3;
+  grid-column: 1/5;
   grid-row: 6/7;
 }
 
 #about-us {
-  grid-column: 3/5;
-  grid-row: 6/7;
-  background-color: gold;
+  grid-column: 1/5;
+  grid-row: 7/8;
 }
 
 #footer {
   grid-column: 1/5;
-  grid-row: 7/8;
-  background-color: black;
+  grid-row: 8/9;
 }
 
 /* Header
@@ -394,6 +394,8 @@ img {
 
 #logo {
   min-width: 120px;
+  position: relative;
+  z-index: 2;
 }
 
 #logo img {
@@ -417,12 +419,13 @@ img {
   display: none;
 }
 
-.menu-trigger.open .i-close {
+.open .menu-trigger .i-close {
   display: inline;
+  
 }
 
-.menu-trigger.open .i-menu {
-  display: none;
+.open .menu-trigger .i-menu {
+  color: white;
 }
 
 
@@ -576,7 +579,7 @@ img {
   width: 300px;
   height: 400px;
   background-color: white;
-  box-shadow: 5px 5px 1px grey;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.4);
 }
 
 #events .photo {
@@ -693,22 +696,19 @@ img {
 .swiper-slide .details span {
   color: #e74c3c;
 }
+/*=========FOOTER
+=======================================*/
+#footer .FRD {
+  width: 80%;
+
+}
+#footer span {
+  display: block;
+  width: 20%;
+}
 
 /* MEDIA QUESRY
 ==============================================*/
-
-/* @media only screen and (max-width: 740px) {
-  #header {
-    flex-flow: column;
-  }
-  #logo img {
-    width: 60px;
-  }
-  #nav li a {
-    padding: 0px;
-  }
-  
-} */
 
 @media only screen and (max-width: 850px) {
   #header #social {
@@ -740,12 +740,12 @@ img {
     grid-row: 5/6;
   }
   #membership {
-    grid-column: 1/2;
+    grid-column: 1/5;
     grid-row: 6/7;
     background-color: blueviolet;
   }
   #about-us {
-    grid-column: 1/2;
+    grid-column: 1/5;
     grid-row: 7/8;
     background-color: gold;
   }
@@ -775,34 +775,45 @@ img {
 
 @media only screen and (max-width: 571px) {
   #header {
+    margin-bottom: 1em;
     flex-flow: column;
     justify-content: flex-end;
   }
   #nav {
-    width: 100%;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: all 1s linear;
+    transition: all .1s linear;
   }
   #nav-triggers {
     display: block;
+    right: 10px;
+    z-index: 2;
   }
-  #nav.open {
-    max-height: 200px;
+  .open #nav {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: black;
   }
   #nav ul {
+    background-color: black;
     flex-flow: column;
   }
   #nav ul a {
+    color: white;
+    font-size: 6vw;
+    text-align: center;
     display: block;
-    padding: .5em;
     border-bottom: 0.5px snow solid;
   }
-  @keyframes mymove {
+  /* @keyframes mymove {
     0%   {background: chocolate; width: 50px; color: black;}
     100% {background: cornflowerblue; width: 100%; color: white;}
   }
   #nav ul a:hover {
     animation: mymove .9s ease-out alternate both;
-  }
+  } */
 }

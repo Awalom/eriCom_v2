@@ -19,11 +19,12 @@
 
   <!-- STYLE LINKS -->
   <!-- google font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700">
+
   <!-- icomoon icons -->
   <link rel="stylesheet" href="./asset/icomoon/style.css">
   <!-- swiper style -->
-  <!-- <link rel="stylesheet" href="./asset/css/swiper.min.css"> -->
+  <link rel="stylesheet" href="./asset/css/swiper.min.css">
   <!-- animation link -->
   <!-- <link rel="stylesheet" href="./asset/css/animate.css"> -->
   <!-- app stylesheet -->
@@ -37,9 +38,9 @@
   <!---- Body start here
   ==================================-->
   <div id="container-main" class="PX-1">
-    <div id="header" class="FRD">
-      <!---- Body header start here
-          ==================================-->
+    <!---- Body header start here
+    ==================================================================-->
+    <header id="header" class="FRD">
       <div id="logo" class="">
         <!--The logo of the communty first flex item fixed width and height-->
         <img src="./asset/images/logo_optimised.svg" alt="">
@@ -57,15 +58,14 @@
       <div id="nav-triggers">
         <a id="button-menu" class="menu-trigger"></i><i class="i-menu"></i></a>
       </div>
+    </header>
+    <!---- header end here
+      ================================================================-->
 
-      <!---- Body header end here
-      ==================================-->
-    </div>
-
-
+    <!---- Banner start here
+    ===================================================================-->
     <div id="banner" class="BR-20px MB-3">
-      <!---- Body Banner start here
-      ==================================-->
+
       <img src="./asset/images/er.png" alt="Eritrean Flag" id="er-flag">
       <img src="./asset/images/ch.png" alt="" id="ch-flag">
       <div id="inner" class="FCD MX-auto">
@@ -80,13 +80,12 @@
         </div>
       </div>
     </div>
-    <!---- Body Banner end here
-      ==================================-->
+    <!---- Banner end here
+      =================================================================-->
 
-
-    <div id="aside" class="BR-20px ML-3">
-      <!---- Body start here
-          ==================================-->
+    <!---- Aside bar start here
+    ===================================================================-->
+    <aside id="aside" class="BR-20px ML-3">
       <div class="MB-1">
         <h3 class="AC">Important links</h3>
         <ul>
@@ -115,11 +114,12 @@
           <li><a class="DB" href="https://www.tesfanews.net/">Tesfa news</a></li>
         </ul>
       </div>
-      <!---- Body start here
-          ==================================-->
-    </div>
+    </aside>
+    <!---- Aside bar end here
+    ===================================================================-->
+
     <!---- Top news start here
-    ==================================-->
+    ===================================================================-->
     <div id="main" class="BR-20px MB-3">
 
       <div class="hr-1 MB-2">
@@ -138,11 +138,12 @@
           </a>
         </div>
       </a>
-      <!--Brief news end here  here-->
     </div>
+    <!---- Top News end here
+    ===================================================================-->
 
     <!---- News start here
-    ==================================-->
+    ===================================================================-->
     <div id="news" class="BR-20px MR-3">
 
       <div class="hr-1 MB-2">
@@ -210,14 +211,17 @@
           </div>
         </a>
       </div>
-      <!---- News end here
-      ==================================-->
     </div>
+    <!---- Top News end here
+    ===================================================================-->
+
     <!---- Events start here
-==================================-->
+    ===================================================================-->
     <div id="events" class="BR-20px ML-2 MR-2">
 
-      <h1>Events</h1>
+      <div class="hr-1 MB-2">
+        <h1 class=""><span>Events</span></h1>
+      </div>
 
       <ul class="FRD">
         <!--This ul display is flex-->
@@ -267,8 +271,11 @@
       <!---- Events end here
           ==================================-->
     </div>
-    <!---- Membership star here
-      ==================================-->
+    <!---- Events end here
+    ===================================================================-->
+
+    <!---- Members start here
+    ===================================================================-->
     <div id="membership" class="BR-20px ML-2">
       <div class="hr-1 MB-2">
         <h1 class=""><span>Our Members</span></h1>
@@ -377,40 +384,66 @@
             </div>
           </div>
           <!-- slide end here -->
-    
+
         </div>
         <!-- swiper-wrapper End here -->
-  
+
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-    
+
         <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
       </div>
-    
+
     </div>
-    <!---- Membership end here
-      ==================================-->
+    <!---- Members end here
+    ===================================================================-->
+
+    <!----  About start here
+    ===================================================================-->
     <div id="about-us" class="BR-20px MR-2">
-      <!---- Abour us start here
-      ==================================-->
-      <p>About Us</p>
-      <!---- About us end here
-      ==================================-->
+      <div class="hr-1 MB-2">
+        <h1 class=""><span>About the Community</span></h1>
+      </div>
     </div>
+    <!---- About end here
+    ===================================================================-->
+
+    <!---- Footer start here
+    ===================================================================-->
     <div id="footer" class="BR-20px">
-      <!---- Body footer start here
-      ==================================-->
-      <p>footer</p>
-      <!---- Body footer end here
-      ==================================-->
+      <div class="hr-1 MB-2">
+        <h1 class=""><span></span></h1>
+      </div>
+
+      <div id="container" class="FCD">
+        <div class="row1 MB-3 MX-auto">
+          <p class="UPP">We connect Swiz to Eritrea and Vice versa</p>
+        </div>
+        <div class="row2 FRD MB-3 MX-auto">
+          <span class="i-facebook IS3EM PX-3"></span>
+          <span class="i-youtube IS3EM PX-3"></span>
+          <span class="i-twitter IS3EM PX-3"></span>
+          <span class="i-instagram IS3EM PX-3"></span>
+          <span class="i-whatsapp IS3EM PX-3"></span>
+        </div>
+        <div class="row3 MX-auto">
+          <p class="UPP">&copy; Independet Eritrean communty bern</p>
+        </div>
+
+      </div>
     </div>
-    <!---- Body containere end here
-      ==================================-->
+    <!---- Footer end here
+    ===================================================================-->
+
   </div>
-  <!-- script start here 
-  ===================================================-->
+  <!---- Container end here
+    ===================================================================-->
+
+
+  <!---- JAVA SKRIP START HERE
+    ===================================================================-->
   <!-- Jquery link -->
   <script src="./asset/js/jquery-3.4.1.min.js"></script>
 
@@ -422,7 +455,7 @@
   <!-- app script -->
   <script src="./asset/js/app.js"></script>
 
-<!-- Swipper script -->
+  <!-- Swipper script -->
 
 </body>
 <!---- Body end here

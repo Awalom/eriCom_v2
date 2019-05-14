@@ -1,14 +1,14 @@
-var menu = document.getElementById('button-menu');
-var nav = document.getElementById('nav');
+$(function() {
+  $('#button-menu').on('click', function(e) {
+    $('#header').toggleClass('open');
+  });
 
-menu.addEventListener('click', function() {
-  // menu.classList.toggle("open");
-  nav.classList.toggle("open")
-})
+
+});
+
 
 
 // Swipper script
-
 var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,
