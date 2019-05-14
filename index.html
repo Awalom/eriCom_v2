@@ -3,7 +3,7 @@
 
 <head>
   <!---- Header start here
-  ==================================-->
+  ===========================================================================-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,7 +17,7 @@
   <meta name="msapplication-config" content="./asset/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- STYLE LINKS -->
+  <!-- STYLE LINKS --------------------------------------------------------------->
   <!-- google font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700">
 
@@ -31,40 +31,42 @@
   <link rel="stylesheet" href="./asset/css/style.css">
   <title>Home</title>
   <!---- Header end here
-  ==================================-->
+  =============================================================================-->
 </head>
 
 <body id="index">
   <!---- Body start here
   ==================================-->
+  
+  
   <div id="container-main" class="PX-1">
     <!---- Body header start here
     ==================================================================-->
     <header id="header" class="FRD">
-      <div id="logo" class="">
-        <!--The logo of the communty first flex item fixed width and height-->
-        <img src="./asset/images/logo_optimised.svg" alt="">
-      </div>
-      <nav id="nav" class="MB-1">
-        <ul class="FRD">
-          <li><a class="PX-1 PY-1 FW-500" href="index.html">Home</a></li>
-          <li><a class="PX-1 PY-1 FW-500" href="new.html">News</a></li>
-          <li><a class="PX-1 PY-1 FW-500" href="events.html">Events</a></li>
-          <li><a class="PX-1 PY-1 FW-500" href="member.html">Members</a></li>
-          <li><a class="PX-1 PY-1 FW-500" href="contact.html">Contact</a></li>
-          <li><a class="PX-1 PY-1 FW-500" href="about.html">About</a></li>
-        </ul>
-      </nav>
-      <div id="nav-triggers">
-        <a id="button-menu" class="menu-trigger"></i><i class="i-menu"></i></a>
-      </div>
+        <div id="logo" class="">
+          <!--The logo of the communty first flex item fixed width and height-->
+          <img src="./asset/images/logo_optimised.svg" alt="">
+        </div>
+        <nav id="nav" class="MB-1">
+          <ul class="FRD">
+            <li><a class="PX-1 PY-1 FW-500" href="index.html">Home</a></li>
+            <li><a class="PX-1 PY-1 FW-500" href="new.html">News</a></li>
+            <li><a class="PX-1 PY-1 FW-500" href="events.html">Events</a></li>
+            <li><a class="PX-1 PY-1 FW-500" href="member.html">Members</a></li>
+            <li><a class="PX-1 PY-1 FW-500" href="contact.html">Contact</a></li>
+            <li><a class="PX-1 PY-1 FW-500" href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <div id="nav-triggers">
+          <a id="button-menu" class="menu-trigger"></i><i class="i-menu"></i></a>
+        </div>
     </header>
     <!---- header end here
       ================================================================-->
 
     <!---- Banner start here
     ===================================================================-->
-    <div id="banner" class="BR-20px MB-3">
+    <section id="banner" class="MB-1 PX-2">
 
       <img src="./asset/images/er.png" alt="Eritrean Flag" id="er-flag">
       <img src="./asset/images/ch.png" alt="" id="ch-flag">
@@ -79,14 +81,14 @@
           <p class="UPP MT-3"> <a class="PX-3" href="#main">Read more ...</a> </p>
         </div>
       </div>
-    </div>
+    </section>
     <!---- Banner end here
       =================================================================-->
 
     <!---- Aside bar start here
     ===================================================================-->
-    <aside id="aside" class="BR-20px ML-3">
-      <div class="MB-1">
+    <aside id="aside" class="MB-1 PX-1">
+      <div class="MB-3">
         <h3 class="AC">Important links</h3>
         <ul>
           <li><a class="DB" href="https://www.refugeecouncil.ch/ecre.htm">ECRE</a></li>
@@ -101,9 +103,9 @@
           <li><a class="DB" href="https://www.billag.ch">Billag</a></li>
         </ul>
       </div>
-      <hr>
-      <div class="MB-1">
-        <h3 class="AC">Links to Eritrea</h3>
+      <hr class="MB-1">
+      <div class="">
+        <h3 class="">Links to Eritrea</h3>
         <ul>
           <li><a class="DB" href="https://www.bbc.com/tigrinya">BCC Tigrina</a></li>
           <li><a class="DB" href="http://awate.com/">Awata news</a></li>
@@ -120,7 +122,7 @@
 
     <!---- Top news start here
     ===================================================================-->
-    <div id="main" class="BR-20px MB-3">
+    <section id="main" class="MB-1 PX-2">
 
       <div class="hr-1 MB-2">
         <h1 class=""><span>Top news</span></h1>
@@ -138,20 +140,21 @@
           </a>
         </div>
       </a>
-    </div>
+    </section>
     <!---- Top News end here
     ===================================================================-->
 
     <!---- News start here
     ===================================================================-->
-    <div id="news" class="BR-20px MR-3">
+    <section id="news" class="MB-1 PX-2">
 
       <div class="hr-1 MB-2">
         <h1 class=""><span>Main news</span></h1>
       </div>
+
       <div id="current" class="FRD">
         <a class="MB-1" href="">
-          <div id="news-section" class="inner-news FRD">
+          <div class="news-section" class="inner-news FRD">
             <div class="MX-auto MT-1">
               <img class="" src="./asset/images/event3.jpg" alt="">
             </div>
@@ -161,7 +164,7 @@
           </div>
         </a>
         <a class="MB-1" href="">
-          <div id="news-section" class="inner-news FRD">
+          <div class="news-section" class="inner-news FRD">
             <div class="MX-auto MT-1">
               <img class="" src="./asset/images/event3.jpg" alt="">
             </div>
@@ -171,7 +174,7 @@
           </div>
         </a>
         <a class="MB-1" href="">
-          <div id="news-section" class="inner-news FRD">
+          <div class="news-section" class="inner-news FRD">
             <div class="MX-auto MT-1">
               <img class="" src="./asset/images/event3.jpg" alt="">
             </div>
@@ -181,7 +184,7 @@
           </div>
         </a>
         <a class="MB-1" href="">
-          <div id="news-section" class="inner-news FRD">
+          <div class="news-section" class="inner-news FRD">
             <div class="MX-auto MT-1">
               <img class="" src="./asset/images/event3.jpg" alt="">
             </div>
@@ -191,42 +194,42 @@
           </div>
         </a>
         <a class="MB-1" href="">
-          <div id="news-section" class="inner-news FRD">
-            <div class="MX-auto MT-1">
-              <img class="" src="./asset/images/event3.jpg" alt="">
+            <div class="news-section" class="inner-news FRD">
+              <div class="MX-auto MT-1">
+                <img class="" src="./asset/images/event3.jpg" alt="">
+              </div>
+              <div class="footer">
+                <p class="PX-1">The imigration office has decied to send eritrean back to eritrea.</p>
+              </div>
             </div>
-            <div class="footer">
-              <p class="PX-1">The imigration office has decied to send eritrean back to eritrea.</p>
-            </div>
-          </div>
-        </a>
-        <a class="MB-1" href="">
-          <div id="news-section" class="inner-news FRD">
-            <div class="MX-auto MT-1">
-              <img class="" src="./asset/images/event3.jpg" alt="">
-            </div>
-            <div class="footer">
-              <p class="PX-1">The imigration office has decied to send eritrean back to eritrea.</p>
-            </div>
-          </div>
-        </a>
+          </a>
+          <a class="MB-1" href="">
+              <div class="news-section" class="inner-news FRD">
+                <div class="MX-auto MT-1">
+                  <img class="" src="./asset/images/event3.jpg" alt="">
+                </div>
+                <div class="footer">
+                  <p class="PX-1">The imigration office has decied to send eritrean back to eritrea.</p>
+                </div>
+              </div>
+            </a>
       </div>
-    </div>
+    </section>
     <!---- Top News end here
     ===================================================================-->
 
     <!---- Events start here
     ===================================================================-->
-    <div id="events" class="BR-20px ML-2 MR-2">
+    <section id="events" class="MB-1 PX-1">
 
-      <div class="hr-1 MB-2">
+      <div class="hr-1 MB-1">
         <h1 class=""><span>Events</span></h1>
       </div>
 
       <ul class="FRD">
         <!--This ul display is flex-->
         <li class="FCD MB-1">
-          <div class="photo MT-1">
+          <div class="photo MT-1 MB-2">
             <img class="MX-auto" src="./asset/images/event3.jpg" alt="">
           </div>
           <div class="inner">
@@ -240,10 +243,10 @@
           </div>
         </li>
         <li class="FCD MB-1">
-          <div class="photo MT-1">
+          <div class="photo MT-1 MB-2">
             <img class="MX-auto" src="./asset/images/event3.jpg" alt="">
           </div>
-          <div class="inner">
+          <div class="inner MT-2 MB-1">
             <h3 class="event-date ML-1">12/12/2019</h3>
             <p id="e_topic" class="ML-1">INDEPENDENCE ERITREAN COMMUNTY IN BERN CELEBRATES ITS FIRST FESTIVAL IN
               BERN.
@@ -254,29 +257,72 @@
           </div>
         </li>
         <li class="FCD MB-1">
-          <div class="photo MT-1">
-            <img class="MX-auto" src="./asset/images/event3.jpg" alt="">
-          </div>
-          <div class="inner">
-            <h3 class="event-date ML-1">12/12/2019</h3>
-            <p id="e_topic" class="ML-1">INDEPENDENCE ERITREAN COMMUNTY IN BERN CELEBRATES ITS FIRST FESTIVAL IN
-              BERN.
-            </p>
-            <div id="readmore" class="MT-2 PX-1">
-              <a href="#">Read more >>> </a>
+            <div class="photo MT-1 MB-2">
+              <img class="MX-auto" src="./asset/images/event3.jpg" alt="">
             </div>
-          </div>
-        </li>
+            <div class="inner">
+              <h3 class="event-date ML-1">12/12/2019</h3>
+              <p id="e_topic" class="ML-1">INDEPENDENCE ERITREAN COMMUNTY IN BERN CELEBRATES ITS FIRST FESTIVAL IN
+                BERN.
+              </p>
+              <div id="readmore" class="MT-2 PX-1">
+                <a href="#">Read more >>> </a>
+              </div>
+            </div>
+          </li>
+          <li class="FCD MB-1">
+            <div class="photo MT-1 MB-2">
+              <img class="MX-auto" src="./asset/images/event3.jpg" alt="">
+            </div>
+            <div class="inner MT-2 MB-1">
+              <h3 class="event-date ML-1">12/12/2019</h3>
+              <p id="e_topic" class="ML-1">INDEPENDENCE ERITREAN COMMUNTY IN BERN CELEBRATES ITS FIRST FESTIVAL IN
+                BERN.
+              </p>
+              <div id="readmore" class="MT-2 PX-1">
+                <a href="#">Read more >>> </a>
+              </div>
+            </div>
+          </li>
+          <li class="FCD MB-1">
+              <div class="photo MT-1 MB-2">
+                <img class="MX-auto" src="./asset/images/event3.jpg" alt="">
+              </div>
+              <div class="inner">
+                <h3 class="event-date ML-1">12/12/2019</h3>
+                <p id="e_topic" class="ML-1">INDEPENDENCE ERITREAN COMMUNTY IN BERN CELEBRATES ITS FIRST FESTIVAL IN
+                  BERN.
+                </p>
+                <div id="readmore" class="MT-2 PX-1">
+                  <a href="#">Read more >>> </a>
+                </div>
+              </div>
+            </li>
+            <li class="FCD MB-1">
+              <div class="photo MT-1 MB-2">
+                <img class="MX-auto" src="./asset/images/event3.jpg" alt="">
+              </div>
+              <div class="inner MT-2 MB-1">
+                <h3 class="event-date ML-1">12/12/2019</h3>
+                <p id="e_topic" class="ML-1">INDEPENDENCE ERITREAN COMMUNTY IN BERN CELEBRATES ITS FIRST FESTIVAL IN
+                  BERN.
+                </p>
+                <div id="readmore" class="MT-2 PX-1">
+                  <a href="#">Read more >>> </a>
+                </div>
+              </div>
+            </li>
+      
       </ul>
       <!---- Events end here
           ==================================-->
-    </div>
+    </section>
     <!---- Events end here
     ===================================================================-->
 
     <!---- Members start here
     ===================================================================-->
-    <div id="membership" class="BR-20px ML-2">
+    <section id="membership" class="MB-1 PX-2">
       <div class="hr-1 MB-2">
         <h1 class=""><span>Our Members</span></h1>
       </div>
@@ -396,23 +442,23 @@
         <div class="swiper-button-prev swiper-button-white"></div>
       </div>
 
-    </div>
+    </section>
     <!---- Members end here
     ===================================================================-->
 
     <!----  About start here
     ===================================================================-->
-    <div id="about-us" class="BR-20px MR-2">
+    <section id="about-us" class="BR-20px MR-2">
       <div class="hr-1 MB-2">
         <h1 class=""><span>About the Community</span></h1>
       </div>
-    </div>
+    </section>
     <!---- About end here
     ===================================================================-->
 
     <!---- Footer start here
     ===================================================================-->
-    <div id="footer" class="BR-20px">
+    <footer id="footer" class="BR-20px">
       <div class="hr-1 MB-2">
         <h1 class=""><span></span></h1>
       </div>
@@ -433,7 +479,7 @@
         </div>
 
       </div>
-    </div>
+    </footer>
     <!---- Footer end here
     ===================================================================-->
 
@@ -443,7 +489,7 @@
 
 
   <!---- JAVA SKRIP START HERE
-    ===================================================================-->
+  ===================================================================-->
   <!-- Jquery link -->
   <script src="./asset/js/jquery-3.4.1.min.js"></script>
 
@@ -458,9 +504,8 @@
   <!-- Swipper script -->
 
 </body>
-<!---- Body end here
-==================================-->
+  <!---- Body end here
+=======================================================================-->
 
-<!--  -->
 
 </html>
