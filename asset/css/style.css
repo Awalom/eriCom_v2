@@ -99,7 +99,7 @@ a {
   outline: none;
   color: inherit;
   /*black*/
-  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 /* BOLD
@@ -236,9 +236,12 @@ img {
 
 .hr-1 {
   position: relative;
+  margin-bottom: 1em;
 }
 .hr-1 span {
   background-color: #fff;
+  padding-right: 10px;
+
 }
 
 .hr-1::before {
@@ -346,6 +349,7 @@ img {
   z-index: 1000;
   position: sticky;
   top: 0px;
+  justify-content: space-between;
 }
 
 #banner {
@@ -394,17 +398,18 @@ img {
 ----------------------------------------------*/
 
 #logo {
-  min-width: 120px;
-  position: relative;
+  min-width: 80px;
   z-index: 2;
 }
 
 #logo img {
-  height: 50px;
+  height: 40px;
+  margin-top: 1em;
+
 }
 
 #nav {
-  min-width: 390px;
+  min-width: 400px;
   align-self: flex-end;
 }
 
@@ -415,16 +420,6 @@ img {
   right: 10px;
   font-size: 3em;
 }
-
-.menu-trigger .i-close {
-  display: none;
-}
-
-.open .menu-trigger .i-close {
-  display: inline;
-  
-}
-
 .open .menu-trigger .i-menu {
   color: white;
 }
@@ -526,9 +521,13 @@ img {
   padding-left: 1em;
 }
 
+aside h1 {
+  background: bisque;
+}
+
 #aside a:hover {
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
   border-bottom: 1px double white;
 }
 
@@ -572,6 +571,7 @@ img {
   width: 300px;
   height: 450px;
   background-color: white;
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4);
 }
 
 #events .photo {
@@ -708,7 +708,6 @@ img {
   #header {
     grid-column: 1/5;
     grid-row: 1/2;
-    background-color: white;
   }
   #banner {
     grid-column: 1/5;
@@ -730,12 +729,10 @@ img {
   #membership {
     grid-column: 1/5;
     grid-row: 6/7;
-    background-color: blueviolet;
   }
   #about-us {
     grid-column: 1/5;
     grid-row: 7/8;
-    background-color: gold;
   }
   #aside {
     grid-column: 1/5;
@@ -747,7 +744,6 @@ img {
   #footer {
     grid-column: 1/5;
     grid-row: 9/10;
-    background-color: black;
   }
 }
 
@@ -755,7 +751,7 @@ img {
   #header {
     height: auto;
     flex-flow: column;
-    background: #e0a156;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4)
   }
   #logo {
     margin-bottom: 1em;
@@ -775,9 +771,9 @@ img {
     justify-content: flex-end;
   }
   #nav {
-    height: 0;
+    position: absolute;
+    opacity: 0;
     overflow: hidden;
-    transition: all .1s linear;
   }
   #nav-triggers {
     display: block;
@@ -787,15 +783,18 @@ img {
   .open #nav {
     height: 100vh;
     width: 100vw;
-    position: fixed;
+    opacity: 1;
+    position: absolute;
     left: 0;
     top: 0;
     z-index: 1;
-    background-color: black;
+    background-color: blue;
+    transition: all .3s linear;
 
   }
   #nav ul {
-    margin-top: 90px;
+    margin-top: 50%;
+    transform: translateY(-50%);
     flex-flow: column;
   }
   #nav ul a {
