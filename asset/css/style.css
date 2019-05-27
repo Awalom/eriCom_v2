@@ -3,6 +3,9 @@
 
 /*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
 --------------------------------------------------------------------------------------- */
+
+/*#region RESET */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -53,8 +56,6 @@ html {
 }
 
 /*font proporty of the site*/
-
-
 
 button, input, select, textarea {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -135,265 +136,274 @@ img {
   color: #ccc;
 }
 
-/* COMMON CLASSES
-------------------------------------*/
+/*#endregion*/
 
-/* DISPLAY
-----------------------------------------------*/
+/*#region COMMEN CLASSESS*/
 
-.DN {
-  display: none;
-}
+  /* DISPLAY
+  ----------------------------------------------*/
 
-.DB {
-  display: block;
-}
+  .DN {
+    display: none;
+  }
 
-.DIB {
-  display: inline-block;
-}
+  .DB {
+    display: block;
+  }
 
-/*Display flex the default flex display is row
-----------------------------------------------*/
+  .DIB {
+    display: inline-block;
+  }
 
-.FRD {
-  /*This class will display flex childs in a row*/
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+  /*Display flex the default flex display is row
+  ----------------------------------------------*/
 
-.FCD {
-  /*This class will display flex childs in a Column*/
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-}
+  .FRD {
+    /*This class will display flex childs in a row*/
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-/* TYPOGRAPHIE
-----------------------------------------------*/
+  .FCD {
+    /*This class will display flex childs in a Column*/
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+  }
 
-.FW-500 {
-  font-weight: 500;
-  font-size: 1.02em;
-}
+  /* TYPOGRAPHIE
+  ----------------------------------------------*/
 
-.FW-900 {
-  font-weight: 900;
-}
+  .FW-500 {
+    font-weight: 500;
+    font-size: 1.02em;
+  }
 
-.UPP {
-  text-transform: uppercase;
-}
+  .FW-900 {
+    font-weight: 900;
+  }
 
-.AC {
-  text-align: center;
-}
+  .UPP {
+    text-transform: uppercase;
+  }
 
-/* MARGINS
-----------------------------------------------*/
+  .AC {
+    text-align: center;
+  }
 
-.MT-1 {
-  margin-top: 1em;
-}
+  /* MARGINS
+  ----------------------------------------------*/
 
-.MT-2 {
-  margin-top: 2em;
-}
+  .MT-1 {
+    margin-top: 1em;
+  }
 
-.MT-3 {
-  margin-top: 3em;
-}
+  .MT-2 {
+    margin-top: 2em;
+  }
 
-.MB-1 {
-  margin-bottom: 1em;
-}
+  .MT-3 {
+    margin-top: 3em;
+  }
 
-.MB-2 {
-  margin-bottom: 2em;
-}
+  .MB-1 {
+    margin-bottom: 1em;
+  }
 
-.MB-3 {
-  margin-bottom: 3em;
-}
+  .MB-2 {
+    margin-bottom: 2em;
+  }
 
-.ML-1 {
-  margin-left: 1em;
-}
+  .MB-3 {
+    margin-bottom: 3em;
+  }
 
-.MR-1 {
-  margin-right: 1em;
-}
+  .ML-1 {
+    margin-left: 1em;
+  }
 
-.MX-auto {
-  margin-right: auto;
-  margin-left: auto;
-}
+  .MR-1 {
+    margin-right: 1em;
+  }
 
-/* Horizontal line for all pages
-----------------------------------------------*/
+  .MX-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-.hr-1 {
-  position: relative;
-  margin-bottom: 1em;
-}
-.hr-1 span {
-  background-color: #fff;
-  padding-right: 10px;
+  /* Horizontal line for all pages
+  ----------------------------------------------*/
 
-}
+  .hr-1 {
+    position: relative;
+    margin-bottom: 1em;
+  }
 
-.hr-1::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 18px;
-  height: 1px;
-  background-color: black;
-  z-index: -10;
-}
+  .hr-1 span {
+    background-color: #fff;
+    padding-right: 10px;
+  }
 
-/* PADDINGS
----------------------------------------------*/
-.P-1 {
-  padding: 1em;
-}
-.PT-1 {
-  padding-top: 1em;
-}
+  .hr-1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 18px;
+    height: 1px;
+    background-color: black;
+    z-index: -10;
+  }
 
-.PT-125 {
-  padding-top: 1.25em;
-}
+  /* PADDINGS
+  ---------------------------------------------*/
 
-.PT-150 {
-  padding-top: 1.50em;
-}
+  .P-1 {
+    padding: 1em;
+  }
 
-.PT-2 {
-  padding-top: 2em;
-}
+  .PT-1 {
+    padding-top: 1em;
+  }
 
-.PB-1 {
-  padding-bottom: 1em;
-}
+  .PT-125 {
+    padding-top: 1.25em;
+  }
 
-.PB-125 {
-  padding-bottom: 1.25em;
-}
+  .PT-150 {
+    padding-top: 1.50em;
+  }
 
-.PB-150 {
-  padding-bottom: 1.50em;
-}
+  .PT-2 {
+    padding-top: 2em;
+  }
 
-.PB-2 {
-  padding-bottom: 2em;
-}
+  .PB-1 {
+    padding-bottom: 1em;
+  }
 
-.PX-1 {
-  padding-left: 1em;
-  padding-right: 1em;
-}
+  .PB-125 {
+    padding-bottom: 1.25em;
+  }
 
-.PX-2 {
-  padding-left: 2em;
-  padding-right: 2em;
-}
-.PY-1 {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
+  .PB-150 {
+    padding-bottom: 1.50em;
+  }
 
-/*  Icon Moon size
----------------------------------------*/
+  .PB-2 {
+    padding-bottom: 2em;
+  }
 
-.IS1EM::before {
-  font-size: 1em;
-}
+  .PX-1 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 
-.IS2EM::before {
-  font-size: 2em;
-}
+  .PX-2 {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-.IS3EM::before {
-  font-size: 3em;
-}
+  .PY-1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 
-/* LAYOUT --> COMMON ELEMENTS
-===================================================================================*/
+  /*  Icon Moon size
+  ---------------------------------------*/
+
+  .IS1EM::before {
+    font-size: 1em;
+  }
+
+  .IS2EM::before {
+    font-size: 2em;
+  }
+
+  .IS3EM::before {
+    font-size: 3em;
+  }
+
+/*#endregion*/
+
+
+/*#region COMMEN LAYOUT*/
+
 
 /* Body
 -----------------------------------------*/
 
-#index {
-  width: 100%;
-}
+  #index {
+    width: 100%;
+  }
 
-/* containers
-----------------------------------------------*/
+  /* containers
+  ----------------------------------------------*/
 
-#container-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1em;
-}
+  #container-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
 
-#header {
-  grid-column: 1/5;
-  grid-row: 1/2;
-  min-height: 50px;
-  width: 100%;
-  background-color: #fff;
-  border-bottom: solid 1px #eee;
-  z-index: 1000;
-  position: sticky;
-  top: 0px;
-  justify-content: space-between;
-}
+  #header {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    min-height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: solid 1px #eee;
+    z-index: 1000;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+  }
 
-#banner {
-  grid-column: 1/5;
-  grid-row: 2/3;
-  height: 400px;
-}
+  #banner {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    height: 400px;
+  }
 
-#aside {
-  grid-column: 1/2;
-  grid-row: 3/5;
-  background: cadetblue;
-}
+  #aside {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    background: cadetblue;
+  }
 
-#main {
-  grid-column: 2/5;
-  grid-row: 3/4;
-}
+  #main {
+    grid-column: 2/5;
+    grid-row: 3/4;
+  }
 
-#news {
-  grid-column: 2/5;
-  grid-row: 4/5;
-}
+  #news {
+    grid-column: 2/5;
+    grid-row: 4/5;
+  }
 
-#events {
-  grid-column: 1/5;
-  grid-row: 5/6;
-}
+  #events {
+    grid-column: 1/5;
+    grid-row: 5/6;
+  }
 
-#membership {
-  grid-column: 1/5;
-  grid-row: 6/7;
-}
+  #membership {
+    grid-column: 1/5;
+    grid-row: 6/7;
+  }
 
-#about-us {
-  grid-column: 1/5;
-  grid-row: 7/8;
-}
+  #about-us {
+    grid-column: 1/5;
+    grid-row: 7/8;
+  }
 
-#footer {
-  grid-column: 1/5;
-  grid-row: 8/9;
-}
+  #footer {
+    grid-column: 1/5;
+    grid-row: 8/9;
+  }
+
+/*#endregion*/
 
 /* Header
 ----------------------------------------------*/
@@ -406,7 +416,6 @@ img {
 #logo img {
   height: 40px;
   margin-top: 1em;
-
 }
 
 #nav {
@@ -421,11 +430,16 @@ img {
   right: 10px;
   font-size: 3em;
 }
+
 .open .menu-trigger .i-menu {
   color: white;
 }
 
+.active {
+  color: red;
+}
 
+/*#region BANNER*/
 /* Banner
 ----------------------------------------------*/
 
@@ -512,6 +526,8 @@ img {
   position: relative;
   text-transform: uppercase;
 }
+/*#endregion*/
+
 
 /*asaid
 ---------------------------------*/
@@ -564,7 +580,6 @@ aside h1 {
   box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.4);
 }
 
-
 /*events
 ---------------------------------*/
 
@@ -592,6 +607,7 @@ aside h1 {
   width: 90px;
   border-bottom: 2px solid #e0a156;
 }
+
 /* #events #readmore {
   height: 2em;
 }
@@ -599,7 +615,8 @@ aside h1 {
   display: block;
   height: 3em;
 } */
-#readmore span, #readmore a{
+
+#readmore span, #readmore a {
   display: inline-block;
   line-height: 2em;
   font-size: 1.2em;
@@ -670,7 +687,6 @@ aside h1 {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-
 }
 
 .swiper-slide {
@@ -697,11 +713,14 @@ aside h1 {
 .swiper-slide .details span {
   color: #e74c3c;
 }
+
 /*=========FOOTER
 =======================================*/
+
 #footer .FRD {
   width: 80%;
 }
+
 #footer span {
   display: block;
   width: 20%;
@@ -779,6 +798,7 @@ aside h1 {
     padding: 0;
   }
 }
+
 @media only screen and (max-width: 563px) {
   .news-section {
     max-width: 100%;
@@ -788,6 +808,7 @@ aside h1 {
     box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.4);
   }
 }
+
 @media only screen and (max-width: 500px) {
   #header {
     margin-bottom: 1em;
@@ -831,6 +852,31 @@ aside h1 {
   }
   #nav ul a:hover {
     color: white;
-    background:#666;
+    background: #666;
   }
+}
+
+.is-scrolled header {
+  height: 180px;
+}
+
+.is-scrolled #logo {
+  height: 56px;
+}
+
+.is-scrolled nav li a {
+  font-size: 1em;
+  margin-left: 2em;
+}
+
+header, header * {
+  transition: all .5s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
 }

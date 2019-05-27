@@ -1,0 +1,46 @@
+{
+
+  "site_info": {
+    "global_title"  : "Eritrean community in Bern",
+    "description"   : "Ertirean community in Bern",
+    "keywords"      : "Eritrean community, be member of community, how to intigrate in Bern ",
+		"author"        : "Eritrean community in Bern",
+		"last_update"   : "20.05.2019"
+  },
+
+  "pages": {
+
+    "index": {
+      "title": "Eritrean Communty main page",
+      "menu" : "HOME",
+      "content" : "home.html"
+    },
+    "News": {
+      "title": "Eritrea and world news",
+      "menu" : "NEWS",
+      "content" : "news.html"
+    },
+    "events": {
+      "title": "Main events of the communty",
+      "menu" : "EVENTS",
+      "content" : "events.html"
+    },
+    "members": {
+      "title": "How to became a member of the Communty",
+      "menu" : "MEMBERS",
+      "content" : "members.html"
+    },
+    "contact": {
+      "title": "How to became a member of the Communty",
+      "menu" : "CONTACT",
+      "content" : "contact.html"
+    },
+    "about": {
+      "title": "How to became a member of the Communty",
+      "menu" : "ABOUT",
+      "content" : "about.html"
+    }
+    
+  }
+
+}
